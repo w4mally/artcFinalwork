@@ -81,7 +81,7 @@ const heri = ref<Place[]>([
     src="https://www.google.com/maps/embed?pb=!4v1721865652176!6m8!1m7!1sCAoSLEFGMVFpcE5mTmJtMUNZRDhqTlJCNHV2Ym56R004STVuNE1lZmRhZldua3Np!2m2!1d40.4409927!2d116.5589562!3f294.79336622986654!4f-9.782519311406062!5f0.7820865974627469" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <iframe v-if="stt == 3 && index == 3"
     src="https://www.google.com/maps/embed?pb=!4v1721865768684!6m8!1m7!1svwDcE5TzKdbsYpq9sa2xxA!2m2!1d-13.1650869094137!2d-72.54470275630072!3f355.05!4f2.5!5f0.4000000000000002" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <h1 v-if="stt == 0">どこに行こうかな</h1>
+    <h1 v-if="stt == 0">どこに行こうかな...</h1>
     <h1 v-if="stt == 1">行先 : {{ city[index].name }}</h1>
     <h1 v-if="stt == 2">行先 : {{ nature[index].name }}</h1>
     <h1 v-if="stt == 3">行先 : {{ heri[index].name }}</h1>
