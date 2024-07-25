@@ -57,7 +57,8 @@ const heri = ref<Place[]>([
     <br>
     <br>
     <WarpButton msg="世界遺産へ" @click="myRandom();stt = 3" />
-    <br>
+    Perspective
+    <WarpButton msg="大学へ戻る" @click="stt = 4" />
     <iframe v-if="stt == 0"
     src="https://www.google.com/maps/embed?pb=!4v1721863981418!6m8!1m7!1s7-5yQ4usCbUxzfvw15eMUA!2m2!1d35.60571204801207!2d139.6832731214612!3f276.5598594256122!4f-0.2816861988002586!5f0.7820865974627469" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -93,10 +94,14 @@ const heri = ref<Place[]>([
     src="https://www.google.com/maps/embed?pb=!4v1721865768684!6m8!1m7!1svwDcE5TzKdbsYpq9sa2xxA!2m2!1d-13.1650869094137!2d-72.54470275630072!3f355.05!4f2.5!5f0.4000000000000002" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <iframe v-if="stt == 3 && index == 4"
     src="https://www.google.com/maps/embed?pb=!4v1721867683362!6m8!1m7!1sCAoSLEFGMVFpcE5PNXRLS2h2UTdVZXZnNUtxUHhKMnhCQzR2dl9DRVZGdjBFYUl5!2m2!1d27.1695271!2d78.03968809999999!3f7.97!4f12.840000000000003!5f0.5970117501821992" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+
+    <iframe v-if="stt == 4"
+    src="https://www.google.com/maps/embed?pb=!4v1721868327262!6m8!1m7!1sx_Ehd47r-cdokafhW_VeBw!2m2!1d35.60690030255347!2d139.6852437690828!3f212.41726775703162!4f7.288585071467878!5f0.7820865974627469" width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <h1 v-if="stt == 0">どこに行こうかな...</h1>
     <h1 v-if="stt == 1">行先 : {{ city[index].name }}</h1>
     <h1 v-if="stt == 2">行先 : {{ nature[index].name }}</h1>
     <h1 v-if="stt == 3">行先 : {{ heri[index].name }}</h1>
+    <h1 v-if="stt == 4">大学に戻ってきた！</h1>
   </main>
 </template>
